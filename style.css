@@ -115,4 +115,51 @@ body {
   transform: scale(0.9);
 }
 
+.swipe {
+  width: 100px;
+  height: 50px;
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+
+.practice-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-pronunciation {
+  width: 120px;
+  height: 60px;
+  margin: 5px;
+  font-family: 'bangers';
+  font-size: 25px;
+  color: dodgerblue;
+  text-shadow: 1px 1px 2px black;
+  border-radius: 30px;
+  border-style: none;
+  background-color: aliceblue;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+
+}
+
+.btn-pronunciation:active {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.practice {
+  font-family: 'bangers';
+  width: 120px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: aliceblue;
+  font-size: 30px;
+  color: rgb(255, 0, 200);
+  text-shadow: 1px 1px 2px black;
+}
+
+
 

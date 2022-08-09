@@ -89,7 +89,7 @@ function setPositionByIndex() {
 let btnMeow = document.getElementById('btnMeow')
 let btnBark = document.getElementById('btnBark')
 let btnScreech = document.getElementById('btnScreech')
-let next1 = document.getElementById('next1')
+let swipe1 = document.getElementById('swipe1')
 
 
 btnBark.addEventListener('click', function() {
@@ -100,7 +100,7 @@ btnBark.addEventListener('click', function() {
     document.getElementById('btnBark').setAttribute("style", "box-shadow: 0 0 0")
     btnBark.style.backgroundColor = 'chartreuse'
     btnBark.style.color = 'red'
-    next1.style.visibility = 'visible'
+    swipe1.style.visibility = 'visible'
     btnBark.disabled = 'true'
     btnScreech.disabled = 'true'
     btnMeow.disabled = 'true'
@@ -129,7 +129,7 @@ btnScreech.addEventListener('click', function() {
 let btnGrowl2 = document.getElementById('btnGrowl2')
 let btnMeow2 = document.getElementById('btnMeow2')
 let btnScreech2 = document.getElementById('btnScreech2')
-let next2 = document.getElementById('next2')
+let swipe2 = document.getElementById('swipe2')
 
 
 btnMeow2.addEventListener('click', function() {
@@ -140,7 +140,7 @@ btnMeow2.addEventListener('click', function() {
     document.getElementById('btnMeow2').setAttribute("style", "box-shadow: 0 0 0")
     btnMeow2.style.backgroundColor = 'chartreuse'
     btnMeow2.style.color = 'red'
-    next2.style.visibility = 'visible'
+    swipe2.style.visibility = 'visible'
     btnMeow2.disabled = 'true'
     btnScreech2.disabled = 'true'
     btnGrowl2.disabled = 'true'
@@ -168,7 +168,7 @@ btnScreech2.addEventListener('click', function() {
 let btnGrowl3 = document.getElementById('btnGrowl3')
 let btnCrow3 = document.getElementById('btnCrow3')
 let btnScreech3 = document.getElementById('btnScreech3')
-let next3 = document.getElementById('next3')
+let swipe3 = document.getElementById('swipe3')
 
 
 btnCrow3.addEventListener('click', function() {
@@ -179,7 +179,7 @@ btnCrow3.addEventListener('click', function() {
     document.getElementById('btnCrow3').setAttribute("style", "box-shadow: 0 0 0")
     btnCrow3.style.backgroundColor = 'chartreuse'
     btnCrow3.style.color = 'red'
-    next3.style.visibility = 'visible'
+    swipe3.style.visibility = 'visible'
     btnCrow3.disabled = 'true'
     btnScreech3.disabled = 'true'
     btnGrowl3.disabled = 'true'
@@ -207,7 +207,7 @@ btnScreech3.addEventListener('click', function() {
 let btnGrowl4 = document.getElementById('btnGrowl4')
 let btnNeigh4 = document.getElementById('btnNeigh4')
 let btnChirp4 = document.getElementById('btnChirp4')
-let next4 = document.getElementById('next4')
+let swipe4 = document.getElementById('swipe4')
 
 
 btnNeigh4.addEventListener('click', function() {
@@ -218,7 +218,7 @@ btnNeigh4.addEventListener('click', function() {
     document.getElementById('btnNeigh4').setAttribute("style", "box-shadow: 0 0 0")
     btnNeigh4.style.backgroundColor = 'chartreuse'
     btnNeigh4.style.color = 'red'
-    next4.style.visibility = 'visible'
+    swipe4.style.visibility = 'visible'
     btnNeigh4.disabled = 'true'
     btnChirp4.disabled = 'true'
     btnGrowl4.disabled = 'true'
@@ -246,7 +246,7 @@ btnChirp4.addEventListener('click', function() {
 let btnGrowl5 = document.getElementById('btnGrowl5')
 let btnChirp5 = document.getElementById('btnChirp5')
 let btnScreech5 = document.getElementById('btnScreech5')
-let back = document.getElementById('back')
+
 
 
 btnChirp5.addEventListener('click', function() {
@@ -257,7 +257,7 @@ btnChirp5.addEventListener('click', function() {
     document.getElementById('btnChirp5').setAttribute("style", "box-shadow: 0 0 0")
     btnChirp5.style.backgroundColor = 'chartreuse'
     btnChirp5.style.color = 'red'
-    back.style.visibility = 'visible'
+    
     btnChirp5.disabled = 'true'
     btnScreech5.disabled = 'true'
     btnGrowl5.disabled = 'true'
@@ -280,5 +280,29 @@ btnScreech5.addEventListener('click', function() {
     btnScreech5.style.backgroundColor = 'red'
     btnScreech5.disabled = 'true'
 })
+
+
+//Practice
+let btnPractice = document.getElementById('btnPractice')
+let practiceWord = document.getElementById('practiceWord')
+
+btnPractice.addEventListener('click', function() {
+  let audio = document.getElementById('practice')
+  audio.play()
+    practiceWord.innerHTML = 'Dogs bark!'
+    setTimeout(() => {
+        practiceWord.innerHTML = 'Cats meow!'
+        setTimeout(() => {
+            practiceWord.innerHTML = 'Roosters crow!'
+            setTimeout(() => {
+                practiceWord.innerHTML = 'Horses neigh!'
+                setTimeout(() => {
+                    practiceWord.innerHTML = 'Birds chirp!'
+                    }, 2000)
+                }, 2000)
+            }, 2000)
+        }, 2000) 
+    },2000)
+
 
 
